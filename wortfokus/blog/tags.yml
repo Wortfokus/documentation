@@ -17,3 +17,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+quizapp:
+  label: Quiz App
+  permalink: /quizapp
+  description: Quizzes for christians

@@ -47,17 +47,17 @@ const config: Config = {
           editUrl:
             'https://github.com/Wortfokus/documentation/tree/main/',
         },
-        // blog: {
-        //   showReadingTime: false,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-          // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
+        blog: {
+          showReadingTime: false,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          //Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -87,7 +87,7 @@ const config: Config = {
           position: 'left',
           label: 'Projects',
         },
-        //{to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Wortfokus/documentation/tree/main',
           label: 'GitHub',

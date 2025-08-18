@@ -5,10 +5,10 @@ title: Quiz-Main
 
 # Quiz-Application
 
-The Idea of this Project is to provide a website where people can learn about the bible by doing quizzes.
+This application was created because of the idea that people can learn about the bible by also solving some quizzes.
 
-Since many people are more interested into games than actually reading the bible, we will give them atleast the possibility to learn this by answering questions online.
+The main idea is that questions can be answered on a phone or any other device and is checked. But to make it more interesting, we plan to apply a online gaming element, where people can play against each others. 
 
-The goal is to have many questions in which the user to ether play alone or later in groups against each others.
+But this is not everything. The next idea is to implement a kind of storyline. This storyline explain for example a story of the bible in multiple steps. And on each step a user can also answer question made specific for this part of the story.
 
-Further Ideas are welcomed.
+This is the first idea, other features might be added later.

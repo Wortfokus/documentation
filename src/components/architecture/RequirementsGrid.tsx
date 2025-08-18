@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { RequirementCard, Requirement } from "./requirement";
+import { RequirementCard, Requirement } from "./Requirement";
 
 export const sortFunctions = {
     "priority-desc": (a: Requirement, b: Requirement) => {

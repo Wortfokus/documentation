@@ -9,6 +9,8 @@ tags: [quizapp]
 
 Today I'm embarking on a new development journey - creating a quiz application from scratch. This project will help me strengthen my programming skills while building something useful and interactive.
 
+<!-- truncate -->
+
 ## Project Goals
 - Create a quiz application for christians.
 - Bring the bible nearer to the bible by letting them solving quizzes.

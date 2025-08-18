@@ -38,11 +38,18 @@ projectsSidebar: [
       'projects/project-quiz/intro',
       {
         type: 'category',
+        label: 'Design',
+        items: [
+          'projects/project-quiz/architecture/main',
+          'projects/project-quiz/architecture/architecture',
+          'projects/project-quiz/architecture/requirements'
+        ]
+      },
+      {
+        type: 'category',
         label: 'Frontend',
         items: [
           'projects/project-quiz/frontend/main',
-          //'projects/project-quiz/frontend/components',
-          //'projects/project-quiz/frontend/api',
         ],
       },
       {
@@ -50,7 +57,6 @@ projectsSidebar: [
         label: 'Backend',
         items: [
           'projects/project-quiz/backend/main',
-          //'projects/project-quiz/backend/database',
         ],
       }
     ],

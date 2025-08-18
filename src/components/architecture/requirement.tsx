@@ -15,10 +15,6 @@ export interface Requirement {
     owner?: string;
     stakeholders?: string[];
     tags?: string[];
-    estimate?: string;
-    createdAt?: string;
-    updatedAt?: string;
-    links?: { label: string; href: string }[];
 }
 
 const priorityColor = (p?: RequirementPriority) => {
@@ -63,19 +59,11 @@ export const RequirementCard: React.FC<{ req: Requirement }> = ({ req }) => {
                             background: "#f3f4f6",
                             padding: "4px 8px",
                             borderRadius: 999,
-                            marginRight: 6,
-                            fontSize: 12,
-                        }}>{req.type ?? "Requirement"}</span>
-                        <span style={{
-                            background: "#f3f4f6",
-                            padding: "4px 8px",
-                            borderRadius: 999,
                             fontSize: 12,
                         }}>{statusLabel(req.status)}</span>
                     </div>
                     <div style={{ fontSize: 12, color: "#6b7280" }}>
                         <div>Owner: {req.owner ?? "—"}</div>
-                        <div style={{ marginTop: 6 }}>Estimate: {req.estimate ?? "—"}</div>
                     </div>
                 </div>
             </header>
@@ -94,21 +82,15 @@ export const RequirementCard: React.FC<{ req: Requirement }> = ({ req }) => {
                 </div>
             </section>
 
-            <footer style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                    {req.links?.slice(0, 2).map(l => (
-                        <a key={l.href} href={l.href} style={{ fontSize: 12, color: "#2563eb" }}>{l.label}</a>
-                    ))}
-                </div>
-                <div style={{ display: "flex", gap: 8 }}>
-                    <button onClick={() => setOpen(v => !v)} aria-expanded={open} style={{
-                        background: "transparent", border: "1px solid #e5e7eb", padding: "6px 10px", borderRadius: 6, cursor: "pointer"
-                    }}>{open ? "Less" : "More"}</button>
-                    <button style={{
-                        background: "#111827", color: "#fff", borderRadius: 6, padding: "6px 10px", border: "none", cursor: "pointer"
-                    }}>Edit</button>
-                </div>
-            </footer>
+            {req.description && (
+                <footer style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <div style={{ fontSize: 12, color: "#6b7280" }}>
+                        <button onClick={() => setOpen(v => !v)} aria-expanded={open} style={{
+                            background: "transparent", border: "1px solid #e5e7eb", padding: "6px 10px", borderRadius: 6, cursor: "pointer"
+                        }}>{open ? "Less" : "More"}</button>
+                    </div>
+                </footer>
+            )}
 
             {open && (
                 <div style={{ marginTop: 8, borderTop: "1px solid #f3f4f6", paddingTop: 8 }}>

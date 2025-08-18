@@ -1,0 +1,158 @@
+[
+    {
+  "id": "Req-01",
+  "title": "Create an Account",
+  "summary": "A user needs to be able to create an account",
+  "description": "The user should be able to create an account on our pages. With this account he is also able to give the needed information about himself.",
+  "priority": "high",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "authorization",
+    "quiz app"
+  ]
+},
+{
+  "id": "Req-02",
+  "title": "Login to an account",
+  "summary": "A user needs to be able to login with his account",
+  "description": "The user should be able to login to his account on our pages. With this account he is also able to give the needed information about himself.",
+  "priority": "high",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "authorization",
+    "quiz app"
+  ]
+},
+{
+  "id": "Req-03",
+  "title": "Start a new game",
+  "summary": "A user is able to start a new single game",
+  "priority": "high",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "game",
+    "quiz app"
+  ]
+},
+{
+  "id": "Req-04",
+  "title": "Play a single game",
+  "summary": "The user is able to play a game",
+  "description": "This includes reading the question in a specific language and giving an answer.",
+  "priority": "high",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "game",
+    "quiz app"
+  ]
+},
+{
+  "id": "Req-05",
+  "title": "See results of a game",
+  "summary": "The user is able to see the results",
+  "description": "It includes a result of points and also the wrong answers together with the correct ones.",
+  "priority": "medium",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "game",
+    "quiz app"
+  ]
+},{
+  "id": "Req-06",
+  "title": "Select a multiplayer game",
+  "summary": "The user is able to select a multiplayer game",
+  "priority": "medium",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "game",
+    "quiz app",
+    "multiplayer"
+  ]
+},
+{
+  "id": "Req-07",
+  "title": "Invite other to game",
+  "summary": "The user is able to invite others to a game",
+  "priority": "medium",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "game",
+    "quiz app",
+    "multiplayer"
+  ]
+},
+{
+  "id": "Req-08",
+  "title": "Play a multiplayer game",
+  "summary": "The user is able to play the multiplayer game with others",
+  "description": "This includes giving an answer and seeing also the result afterwards.",
+  "priority": "medium",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "game",
+    "quiz app",
+    "multiplayer"
+  ]
+},
+{
+  "id": "Req-09",
+  "title": "Chat in multiplayer game",
+  "summary": "The user is able to chat with other players",
+  "priority": "low",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "game",
+    "quiz app",
+    "multiplayer"
+  ]
+},
+{
+  "id": "Req-11",
+  "title": "Storyline walkthrough",
+  "summary": "The user is able to walk through a storyline",
+  "description": "The user should be able to read one of the storylines and walk through it.",
+  "priority": "low",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "story",
+    "quiz app"
+  ]
+},
+{
+  "id": "Req-12",
+  "title": "Read a story",
+  "summary": "The user is able to read a story",
+  "description": "The user should be able to read a story and also give an answer to the question.",
+  "priority": "low",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "story",
+    "quiz app"
+  ]
+},
+{
+  "id": "Req-13",
+  "title": "Storyline results",
+  "summary": "The user is able to see the results",
+  "description": "The user should be able to see the results which he got when he went through the storyline.",
+  "priority": "low",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "story",
+    "quiz app"
+  ]
+}
+
+]

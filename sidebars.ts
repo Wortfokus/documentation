@@ -22,7 +22,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Getting Started',
-      items: ['introduction/main'],
+      items: ['introduction/main', 'introduction/authentication'],
     },
   ],
 projectsSidebar: [
@@ -42,7 +42,9 @@ projectsSidebar: [
         items: [
           'projects/project-quiz/architecture/main',
           'projects/project-quiz/architecture/architecture',
-          'projects/project-quiz/architecture/requirements'
+          'projects/project-quiz/architecture/requirements',
+          'projects/project-quiz/architecture/release-design',
+          'projects/project-quiz/architecture/full-view'
         ]
       },
       {

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 sidebar_label: Architecture Overview
 ---
 
@@ -23,7 +23,7 @@ To understand the release, please refer to [this document](release-design.md).
 ## Authentication
 
 Since creating our own authentication would have been an overkill, we stick with [Firebase](https://firebase.google.com/).
-For further information see [this document](../../../introduction/authentication.md).   
+For further information see [this document](../../../general/authentication).   
 
 ## Full View
 

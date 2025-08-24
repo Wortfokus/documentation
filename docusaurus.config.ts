@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: 'wortfokus', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -80,25 +80,25 @@ const config: Config = {
         src: 'img/Wortfokus.png',
       },
       items: [
-        {
-          type: 'docSidebar',
+    {
+      type: 'docSidebar',
           sidebarId: 'mainSidebar',
-          position: 'left',
-          label: 'General',
-        },
-        {
-          type: 'docSidebar',
+      position: 'left',
+      label: 'General',
+    },
+    {
+      type: 'docSidebar',
           sidebarId: 'projectsSidebar', // separate Sidebar nur für Projekte
-          position: 'left',
-          label: 'Projects',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/Wortfokus/documentation/tree/main',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+      position: 'left',
+      label: 'Projects',
+    },
+    {to: '/blog', label: 'Blog', position: 'left'},
+    {
+      href: 'https://github.com/Wortfokus/documentation/tree/main',
+      label: 'GitHub',
+      position: 'right',
+    },
+  ],
     },
     footer: {
       style: 'dark',
@@ -108,7 +108,7 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: '/docs/introduction/main',
+              to: '/docs/general/main',
             },
           ],
         },

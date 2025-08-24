@@ -43,20 +43,20 @@ flowchart TD
     BuildBE --> Deploy
 ```
 
-    <!-- subgraph Server[Projekt-Server / Hosting]
-        FEApp[Quiz-App<br/>Flutter Web/Mobile]
-        API[Backend API<br/>.NET]
-        DB[(Postgres SQL DB)]
-    end
+<!--
+This section describes the branching model used in the project-quiz architecture release design documentation.
+It provides guidelines and structure for managing branches within the project's development workflow.
+-->
+## Branching-Model
 
-    subgraph Auth[SSO / Firebase]
-        WP[Firebase SSO]
-    <!-- end -->
 
-    Deploy --> FEApp
-    Deploy --> API
-    API --> DB
+Our branching model is designed to ensure code quality and smooth releases:
 
-    FEApp -->|API Calls| API
-    FEApp -->|Auth| WP
-    API -->|Auth Check| WP -->
+- **main-branch**: This is both the main and production branch. Any code merged here is automatically published, provided all checks pass and the code is correct. Only Administrators should be able to merge into this branch.
+- **developer branch**: Used for testing and training. Final bug fixes and testing are performed here before release. Once approved by the administrator, code is merged into the main branch.
+- **feature branches**: All issues and new features are developed in dedicated feature branches, named `feature-<number>-<title>`. After completion and testing, a pull request is made against the developer branch.
+- **github-automation**: Automated checks are run before new code is added to maintain quality and correctness.
+
+## Automation with GitHub Actions
+
+We use GitHub Actions to automate our workflows. These actions are triggered by events such as pull requests or merges. Defined workflows handle tasks like running tests, building the project, and deploying code to our servers. This ensures that every change is validated and released efficiently, reducing manual effort and minimizing errors.

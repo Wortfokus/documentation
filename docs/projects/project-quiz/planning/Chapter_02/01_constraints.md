@@ -11,3 +11,4 @@ This requirements listed up are constraints for the software architecture in the
 - This website should be found on the internet. Further on it should be usable on the mobile devices.
 - An important function is to let player play games against each others, so probably websockets are needed.
 - We do not have many developers, so having a framework for the mobile and computer devices is needed.
+- We want to make it fun, so allowing players to compare to each others would be interesting.

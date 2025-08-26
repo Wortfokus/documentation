@@ -48,6 +48,11 @@ The entire solution will be hosted on **Hetzner Cloud** and will use **Firebase 
   - Issues JWT tokens for Flutter and WordPress  
   - Tokens validated in the .NET API  
 
+- **Redis Cache**
+  - (Not yet fully defined).
+  - Since we might want a fast way to load informations and store them at the same time, we will include Redis.
+  - It would preload all the questions for a game and the user only need to load them.
+
 ---
 
 ## 3. Architecture Diagram

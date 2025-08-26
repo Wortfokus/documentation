@@ -153,6 +153,19 @@
     "story",
     "quiz app"
   ]
+},
+{
+  "id": "Req-14",
+  "title": "Game results",
+  "summary": "The user is able to see the results",
+  "description": "The user should be able to see the results of a game he played.",
+  "priority": "medium",
+  "status": "proposed",
+  "owner": "Adrian",
+  "tags": [
+    "story",
+    "quiz app"
+  ]
 }
 
 ]

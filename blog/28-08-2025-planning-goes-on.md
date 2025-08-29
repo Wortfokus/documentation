@@ -38,4 +38,45 @@ But then I could use a third-party solution like [Auth0](https://auth0.com/). It
 The next product I checked was [SupaBase](https://supabase.com/). It provides an authentication and also a database in the same package. Would be good enough for me. But again, I found comments that it would cost too much and it does not have a direct integration for my Wordpress site.   
 And also I wanted to have an own hosted postgres-solution (managed database), for learning purposes. So it was also a nice solution, but it did not handled all my whishes.
 
-The next product I checked was [Firebase](https://firebase.google.com/)
+The next product I checked was [Firebase](https://firebase.google.com/). It seems to have a cheap option and is easy to implement with my current techstack. It looks like that there is also a plugin available to use it on wordpress.
+
+This makes Firebase probably the best solution overall. But we need to remember that I did not make any implementation but only used internet resources.
+
+### Database
+
+The next problem was which database should I use. I have worked with several kind of databases. From SQL-Databases like [PostgreSQL](https://www.postgresql.org/), to [MongoDB](https://www.mongodb.com/) and a Graph-Databases [Neo4J](https://neo4j.com/). 
+All of them have their arguments to be used. For example is Neo4J an easy solution to make relations. Document-based MongoDB with his NoSQL features (I know Neo4J also is a NoSQL-Database). And then PostgreSQL with its tables and relations.
+
+I personally prefer Neo4J as Database (since I like the way it handles relations). But for my case I had to think about the information I wanted to store and how to set up my database. So I had to put my preferences a bit back...   
+First I was thinking about the most important data really needed.   
+
+What would it be?🤔   
+I mean for sure Users need to be stored. And I am building a quiz-application - so questions? And their answers?   
+Something else?   
+Oh, yeah in future I have feature I want to implement...
+
+And what do I need to store there:
+- Story
+- Text 
+- Questions between the different texts
+- Its answers
+
+For the story-feature, the graphical database looks nice.
+But what about the questions? How do I store them? And the answers?   
+
+And as a result, relational databases seemed to be the best solution. (I have to admit, I had to use ChatGPT to convince me, since I would have thought differently).   
+So I ended up with PostgreSQL. (For further insights about our decision check also [this page](../docs/projects/project-quiz/architecture/Decisions/adr-001-database-decision))
+
+### Further Elements
+
+We already made some further planning and we made some decisions. Although it might get more important when we have a first production-ready solution.   
+
+We for example checked how we could host our fullstack-application and make it available. There it looks like we use a combination of already using solutions and add new ones.    
+This means in our case that Wordpress is still used with Ionos, but our other products are hosted in an other way. But we have yet not decided which provider we will use. It was more about the idea if we host everything (Wordpress and Coded Products) on the same host-provider. But it looks like Ionos is the best when using Wordpress and others are better applying DotNet.     
+But we will come back to this, as soon as we go into production.
+
+---
+
+This was the second blog-article. 😁   
+I hope you got an idea about what is happening in the background, while planning our application.   
+It's though, but we should soon enough be able to start coding. We also already prepared some stuff on Github. (Like Project-Board and automatically move Issues on the board).

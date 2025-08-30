@@ -15,16 +15,17 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://wortfokus.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'wortfokus', // Usually your GitHub org/user name.
+  organizationName: 'Wortfokus', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
-
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 

@@ -1,5 +1,7 @@
 # Website
 
+This is the official documentation. Changes are only allowed through Pull Requests, which were checked by the team.
+
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation

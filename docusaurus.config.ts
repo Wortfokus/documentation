@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'http://developer.wortfokus.org',
+  url: 'https://developer.wortfokus.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -24,7 +24,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Wortfokus', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  //deploymentBranch: 'gh-pages',
   trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwortfokus=self.webpackChunkwortfokus||[]).push([[2068],{2068:(e,s,k)=>{k.d(s,{createInfoServices:()=>r.v});var r=k(1366);k(8198)}}]);

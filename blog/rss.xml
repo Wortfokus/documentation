@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Wortfokus Documentation Blog</title>
+        <link>https://developer.wortfokus.org/blog</link>
+        <description>Wortfokus Documentation Blog</description>
+        <lastBuildDate>Thu, 28 Aug 2025 05:54:20 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Planning goes on]]></title>
+            <link>https://developer.wortfokus.org/blog/planning-goes-on</link>
+            <guid>https://developer.wortfokus.org/blog/planning-goes-on</guid>
+            <pubDate>Thu, 28 Aug 2025 05:54:20 GMT</pubDate>
+            <description><![CDATA[A little update about the current state of the product. I am still mainly in the planning phase, but I am also certain to be able to start with coding soon. Most of the needed tech-stack is now selected and I could go on working on our application. 💪]]></description>
+            <content:encoded><![CDATA[<p>A little update about the current state of the product. I am still mainly in the planning phase, but I am also certain to be able to start with coding soon. Most of the needed tech-stack is now selected and I could go on working on our application. 💪</p>
+<p>After many days of planning and thinking how I could come up with the best solution and how I would implement stuff there are still questions open.</p>
+<p>But the architect (@adrian) was able to make some progress by coming up with a tech-stack and planning for the future. (I will explain later what the thought process was).</p>
+<p>In the mean time new article where written on the main page and also published. Thanks to everyone who reads them and also comments it. I still hope it is a blessing for anyone using it and that people get strengthened in their belief.</p>
+<p>Until now nothing was coded and I am still kind of stuck in the planning part. But I am certain that soon enough the important things are planned, so that the engineers (@adrian) 😅 can start working on the application.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="architectural-planning">Architectural Planning<a href="https://developer.wortfokus.org/blog/planning-goes-on#architectural-planning" class="hash-link" aria-label="Direct link to Architectural Planning" title="Direct link to Architectural Planning">​</a></h2>
+<p>On  the planning more things came than first thought. From only thinking about the tech-stack (Flutter, .Net and a Database), I had to think about more stuff. Here some examples:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="authentication">Authentication<a href="https://developer.wortfokus.org/blog/planning-goes-on#authentication" class="hash-link" aria-label="Direct link to Authentication" title="Direct link to Authentication">​</a></h3>
+<p>How would the projects implement authentication? I mean, it should somehow cost little to use it, but in the mean time it should also promise enough security. Could I use a self-hosted solution like <a href="https://www.keycloak.org/" target="_blank" rel="noopener noreferrer">KeyCloak</a> or is <a href="https://auth0.com/" target="_blank" rel="noopener noreferrer">Auth0</a> a better solution?</p>
+<p>I ended up with <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a>. Here the thought process:</p>
+<p>I would love to use a self-hosted solution like already mentioned: <a href="https://www.keycloak.org/" target="_blank" rel="noopener noreferrer">KeyCloak</a>. But right now there is only one developer and I have yet not enough experience to promise a secure authentication if I do it on my own.</p>
+<p>But then I could use a third-party solution like <a href="https://auth0.com/" target="_blank" rel="noopener noreferrer">Auth0</a>. It would meet all the needed requirements I had. Those where: I can easily use it in my own coded application. Auth0 provides a SDK for .NET <a href="https://auth0.com/docs/libraries" target="_blank" rel="noopener noreferrer">libraries</a> and there is also a plugin available to use the login-process on my current Wordpress page. There is only one big issue. It found many comments that it was too expensive. Soon enough I would need to pay a lot of money, for a page which should be actually not cost anything to the users.</p>
+<p>The next product I checked was <a href="https://supabase.com/" target="_blank" rel="noopener noreferrer">SupaBase</a>. It provides an authentication and also a database in the same package. Would be good enough for me. But again, I found comments that it would cost too much and it does not have a direct integration for my Wordpress site.<br>
+<!-- -->And also I wanted to have an own hosted postgres-solution (managed database), for learning purposes. So it was also a nice solution, but it did not handled all my whishes.</p>
+<p>The next product I checked was <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a>. It seems to have a cheap option and is easy to implement with my current techstack. It looks like that there is also a plugin available to use it on wordpress.</p>
+<p>This makes Firebase probably the best solution overall. But we need to remember that I did not make any implementation but only used internet resources.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="database">Database<a href="https://developer.wortfokus.org/blog/planning-goes-on#database" class="hash-link" aria-label="Direct link to Database" title="Direct link to Database">​</a></h3>
+<p>The next problem was which database should I use. I have worked with several kind of databases. From SQL-Databases like <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">PostgreSQL</a>, to <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a> and a Graph-Databases <a href="https://neo4j.com/" target="_blank" rel="noopener noreferrer">Neo4J</a>.
+All of them have their arguments to be used. For example is Neo4J an easy solution to make relations. Document-based MongoDB with his NoSQL features (I know Neo4J also is a NoSQL-Database). And then PostgreSQL with its tables and relations.</p>
+<p>I personally prefer Neo4J as Database (since I like the way it handles relations). But for my case I had to think about the information I wanted to store and how to set up my database. So I had to put my preferences a bit back...<br>
+<!-- -->First I was thinking about the most important data really needed.</p>
+<p>What would it be?🤔<br>
+<!-- -->I mean for sure Users need to be stored. And I am building a quiz-application - so questions? And their answers?<br>
+<!-- -->Something else?<br>
+<!-- -->Oh, yeah in future I have feature I want to implement...</p>
+<p>And what do I need to store there:</p>
+<ul>
+<li>Story</li>
+<li>Text</li>
+<li>Questions between the different texts</li>
+<li>Its answers</li>
+</ul>
+<p>For the story-feature, the graphical database looks nice.
+But what about the questions? How do I store them? And the answers?</p>
+<p>And as a result, relational databases seemed to be the best solution. (I have to admit, I had to use ChatGPT to convince me, since I would have thought differently).<br>
+<!-- -->So I ended up with PostgreSQL. (For further insights about our decision check also <a href="https://developer.wortfokus.org/docs/projects/project-quiz/architecture/Decisions/adr-001-database-decision">this page</a>)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="further-elements">Further Elements<a href="https://developer.wortfokus.org/blog/planning-goes-on#further-elements" class="hash-link" aria-label="Direct link to Further Elements" title="Direct link to Further Elements">​</a></h3>
+<p>We already made some further planning and we made some decisions. Although it might get more important when we have a first production-ready solution.</p>
+<p>We for example checked how we could host our fullstack-application and make it available. There it looks like we use a combination of already using solutions and add new ones.<br>
+<!-- -->This means in our case that Wordpress is still used with Ionos, but our other products are hosted in an other way. But we have yet not decided which provider we will use. It was more about the idea if we host everything (Wordpress and Coded Products) on the same host-provider. But it looks like Ionos is the best when using Wordpress and others are better applying DotNet.<br>
+<!-- -->But we will come back to this, as soon as we go into production.</p>
+<hr>
+<p>This was the second blog-article. 😁<br>
+<!-- -->I hope you got an idea about what is happening in the background, while planning our application.<br>
+<!-- -->It's though, but we should soon enough be able to start coding. We also already prepared some stuff on Github. (Like Project-Board and automatically move Issues on the board).</p>]]></content:encoded>
+            <category>Quiz App</category>
+        </item>
+        <item>
+            <title><![CDATA[Start planning]]></title>
+            <link>https://developer.wortfokus.org/blog/first-blog-post</link>
+            <guid>https://developer.wortfokus.org/blog/first-blog-post</guid>
+            <pubDate>Sun, 17 Aug 2025 19:59:28 GMT</pubDate>
+            <description><![CDATA[Today I'm embarking on a new development journey - creating a quiz application from scratch. This project will help me strengthen my programming skills while building something useful and interactive.]]></description>
+            <content:encoded><![CDATA[<p>Today I'm embarking on a new development journey - creating a quiz application from scratch. This project will help me strengthen my programming skills while building something useful and interactive.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-goals">Project Goals<a href="https://developer.wortfokus.org/blog/first-blog-post#project-goals" class="hash-link" aria-label="Direct link to Project Goals" title="Direct link to Project Goals">​</a></h2>
+<ul>
+<li>Create a quiz application for christians.</li>
+<li>Bring the bible nearer to the bible by letting them solving quizzes.</li>
+<li>Find out new things about the bible by enabling new knowledge about the word.</li>
+<li>Let friends test their knowledge agains each others.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="initial-planning-phase">Initial Planning Phase<a href="https://developer.wortfokus.org/blog/first-blog-post#initial-planning-phase" class="hash-link" aria-label="Direct link to Initial Planning Phase" title="Direct link to Initial Planning Phase">​</a></h2>
+<p>For the first phase, I'll focus on:</p>
+<ol>
+<li>Defining the core features.</li>
+<li>Selecting the right technology stack.</li>
+<li>Setting up Github as my code base.</li>
+<li>Create the basic project structure.</li>
+</ol>
+<p>The idea is to document my journey and also announce new features which where implemented.
+Stay tuned.</p>]]></content:encoded>
+            <category>Quiz App</category>
+        </item>
+    </channel>
+</rss>

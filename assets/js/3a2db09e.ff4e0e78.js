@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwortfokus=self.webpackChunkwortfokus||[]).push([[8121],{8070:s=>{s.exports=JSON.parse('{"tags":[{"label":"Quiz App","permalink":"/blog/tags/quizapp","description":"Quizzes for christians","count":2}]}')}}]);

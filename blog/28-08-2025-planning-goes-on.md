@@ -2,7 +2,7 @@
 slug: planning-goes-on
 title: Planning goes on
 authors: [adrian]
-tags: [quizapp]
+tags: [quizapp, documentation]
 ---
 
 A little update about the current state of the product. I am still mainly in the planning phase, but I am also certain to be able to start with coding soon. Most of the needed tech-stack is now selected and I could go on working on our application. 💪

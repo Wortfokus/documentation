@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Wortfokus Documentation Blog</title>
-        <link>https://developer.wortfokus.org/blog</link>
+        <link>https://developer.wortfokus.org/documentation/blog</link>
         <description>Wortfokus Documentation Blog</description>
         <lastBuildDate>Wed, 08 Oct 2025 08:16:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Reevaluation]]></title>
-            <link>https://developer.wortfokus.org/blog/reevaluation</link>
-            <guid>https://developer.wortfokus.org/blog/reevaluation</guid>
+            <link>https://developer.wortfokus.org/documentation/blog/reevaluation</link>
+            <guid>https://developer.wortfokus.org/documentation/blog/reevaluation</guid>
             <pubDate>Wed, 08 Oct 2025 08:16:00 GMT</pubDate>
             <description><![CDATA[A long time went by since my last blog-post. Since the last publication, some ideas where created and tested.]]></description>
             <content:encoded><![CDATA[<p>A long time went by since my last blog-post. Since the last publication, some ideas where created and tested.
@@ -19,22 +19,22 @@ Other ideas where kind of thrown into the trash. Mostly because of timing issues
 <p>We had to think about which tools really make sense and which are not good enough.<br>
 <!-- -->(Although I might should at some point just start developing it, instead of only thinking about it. But until now I was looking for Tutorials about Flutter and tried to learn it. More about this later).</p>
 <p>But step by step.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="school-started">School started<a href="https://developer.wortfokus.org/blog/reevaluation#school-started" class="hash-link" aria-label="Direct link to School started" title="Direct link to School started" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="school-started">School started<a href="https://developer.wortfokus.org/documentation/blog/reevaluation#school-started" class="hash-link" aria-label="Direct link to School started" title="Direct link to School started" translate="no">​</a></h2>
 <p>First of all my studies started again. This means that I won't have as much time to work on this project as wished anymore.
 But the good thing is that I am already in my last semester and I am already very near to finish with a bachelor title in Informatics.
 But there remains one big work to do before I can get my degree, and this is my Bachelorthesis.</p>
 <p>So therefore I need to step back a bit with this project, although my vision is still to make an app which can help Christians to understand the bible more with the generated questionsets.</p>
 <p>But still there is some progress going on with my apps.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="authentication--wortfokusorg">Authentication + Wortfokus.org<a href="https://developer.wortfokus.org/blog/reevaluation#authentication--wortfokusorg" class="hash-link" aria-label="Direct link to Authentication + Wortfokus.org" title="Direct link to Authentication + Wortfokus.org" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="authentication--wortfokusorg">Authentication + Wortfokus.org<a href="https://developer.wortfokus.org/documentation/blog/reevaluation#authentication--wortfokusorg" class="hash-link" aria-label="Direct link to Authentication + Wortfokus.org" title="Direct link to Authentication + Wortfokus.org" translate="no">​</a></h2>
 <p>As you might have seen, there is now a authentication implementated in my wordpress-application <a href="https://wortfokus.org/" target="_blank" rel="noopener noreferrer">Wortfokus.org</a><br>
 <!-- -->Users are now able to login to my webpage and bookmark specific articles. This is right now the only feature accesible on wordpress through the authentication. Further implementation might be coming. If you have an idea of what could be implemented; don't hesitate to write me (e.g. mail -&gt; <a href="mailto:kontakt@wortfokus.org" target="_blank" rel="noopener noreferrer">kontakt@wortfokus.org</a>).</p>
 <p>As you might have seen I changed the login to Auth0. The reason for it was that the implementation on my wordpress would have cost me too much. There was a free firebase plugin available, but as soon as you wanted to implement social login, you need to pay for the plugin, which was not my intention. We might think of going to an other platform (e. g. own CMS-version on Github).</p>
 <p>But for now Authentication is implemented and the user is now able to stick forward with his account registered.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="move-away-from-flutter">Move away from Flutter<a href="https://developer.wortfokus.org/blog/reevaluation#move-away-from-flutter" class="hash-link" aria-label="Direct link to Move away from Flutter" title="Direct link to Move away from Flutter" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="move-away-from-flutter">Move away from Flutter<a href="https://developer.wortfokus.org/documentation/blog/reevaluation#move-away-from-flutter" class="hash-link" aria-label="Direct link to Move away from Flutter" title="Direct link to Move away from Flutter" translate="no">​</a></h2>
 <p>Although Flutter seems to be a fun challenge, it took me to much time to understand it. There might be a future project where I could use Flutter. But for now I am interested in setting up the project relatively fast. Therefore Ionic and Angular seems to be a better fit.<br>
 <!-- -->It might also end up in Ionic and Vue, because Vue seems to have a prettier UI. But this is not fixed until now.<br>
 <!-- -->I will have to decide this soon enough, although.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future">Future<a href="https://developer.wortfokus.org/blog/reevaluation#future" class="hash-link" aria-label="Direct link to Future" title="Direct link to Future" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future">Future<a href="https://developer.wortfokus.org/documentation/blog/reevaluation#future" class="hash-link" aria-label="Direct link to Future" title="Direct link to Future" translate="no">​</a></h2>
 <p>What is going on right now?</p>
 <p>Since I am constantly reevaluating Wordpress (I have to admit it provides many good features), but it is a constant restructuring and search for new ways - I am considering a CMS-solution like <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer">ghost</a></p>
 <p>Next on our list is the start of the implementation. First we need to have an idea about the design of our UI. How to implement it (Angular or Vue) and then our backend.<br>
@@ -43,8 +43,8 @@ But there remains one big work to do before I can get my degree, and this is my 
         </item>
         <item>
             <title><![CDATA[Publish Documentation]]></title>
-            <link>https://developer.wortfokus.org/blog/publish-documentation</link>
-            <guid>https://developer.wortfokus.org/blog/publish-documentation</guid>
+            <link>https://developer.wortfokus.org/documentation/blog/publish-documentation</link>
+            <guid>https://developer.wortfokus.org/documentation/blog/publish-documentation</guid>
             <pubDate>Wed, 08 Oct 2025 08:16:00 GMT</pubDate>
             <description><![CDATA[Today, I tried to publish this documentation online, with every possible resource and restrictions.]]></description>
             <content:encoded><![CDATA[<p>Today, I tried to publish this documentation online, with every possible resource and restrictions.<br>
@@ -83,7 +83,7 @@ After running my code multiple times I was able to see the documentation on a gi
 </li>
 <li>Add CNAME in Ionos to point towards my github-page. (It takes maybe some time until it is available).</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tip">Tip<a href="https://developer.wortfokus.org/blog/publish-documentation#tip" class="hash-link" aria-label="Direct link to Tip" title="Direct link to Tip" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tip">Tip<a href="https://developer.wortfokus.org/documentation/blog/publish-documentation#tip" class="hash-link" aria-label="Direct link to Tip" title="Direct link to Tip" translate="no">​</a></h2>
 <p>I had for a long time a big issue that my page was not found. It came because of some mistakes of mine.<br>
 <!-- -->First I set the wrong domain in my docusaurus-configuration. _(Although I am not sure if this really helped, because as I understand, this configuration is only needed if you publish directly from your codebase.) But what was needed, is that I put my baseUrl to an empty folder and not showing towards a documentation-folder.</p>
 <p>Next thing I had done wrong, was that I did not select the root-folder in my Github-Page-Settings and rather put docs as the value, which is wrong.</p>
@@ -99,8 +99,8 @@ After running my code multiple times I was able to see the documentation on a gi
         </item>
         <item>
             <title><![CDATA[Planning goes on]]></title>
-            <link>https://developer.wortfokus.org/blog/planning-goes-on</link>
-            <guid>https://developer.wortfokus.org/blog/planning-goes-on</guid>
+            <link>https://developer.wortfokus.org/documentation/blog/planning-goes-on</link>
+            <guid>https://developer.wortfokus.org/documentation/blog/planning-goes-on</guid>
             <pubDate>Thu, 28 Aug 2025 05:54:20 GMT</pubDate>
             <description><![CDATA[A little update about the current state of the product. I am still mainly in the planning phase, but I am also certain to be able to start with coding soon. Most of the needed tech-stack is now selected and I could go on working on our application. 💪]]></description>
             <content:encoded><![CDATA[<p>A little update about the current state of the product. I am still mainly in the planning phase, but I am also certain to be able to start with coding soon. Most of the needed tech-stack is now selected and I could go on working on our application. 💪</p>
@@ -109,9 +109,9 @@ After running my code multiple times I was able to see the documentation on a gi
 <p>In the mean time new article where written on the main page and also published. Thanks to everyone who reads them and also comments it. I still hope it is a blessing for anyone using it and that people get strengthened in their belief.</p>
 <p>Until now nothing was coded and I am still kind of stuck in the planning part. But I am certain that soon enough the important things are planned, so that the engineers (@adrian) 😅 can start working on the application.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="architectural-planning">Architectural Planning<a href="https://developer.wortfokus.org/blog/planning-goes-on#architectural-planning" class="hash-link" aria-label="Direct link to Architectural Planning" title="Direct link to Architectural Planning" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="architectural-planning">Architectural Planning<a href="https://developer.wortfokus.org/documentation/blog/planning-goes-on#architectural-planning" class="hash-link" aria-label="Direct link to Architectural Planning" title="Direct link to Architectural Planning" translate="no">​</a></h2>
 <p>On  the planning more things came than first thought. From only thinking about the tech-stack (Flutter, .Net and a Database), I had to think about more stuff. Here some examples:</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="authentication">Authentication<a href="https://developer.wortfokus.org/blog/planning-goes-on#authentication" class="hash-link" aria-label="Direct link to Authentication" title="Direct link to Authentication" translate="no">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="authentication">Authentication<a href="https://developer.wortfokus.org/documentation/blog/planning-goes-on#authentication" class="hash-link" aria-label="Direct link to Authentication" title="Direct link to Authentication" translate="no">​</a></h3>
 <p>How would the projects implement authentication? I mean, it should somehow cost little to use it, but in the mean time it should also promise enough security. Could I use a self-hosted solution like <a href="https://www.keycloak.org/" target="_blank" rel="noopener noreferrer">KeyCloak</a> or is <a href="https://auth0.com/" target="_blank" rel="noopener noreferrer">Auth0</a> a better solution?</p>
 <p>I ended up with <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a>. Here the thought process:</p>
 <p>I would love to use a self-hosted solution like already mentioned: <a href="https://www.keycloak.org/" target="_blank" rel="noopener noreferrer">KeyCloak</a>. But right now there is only one developer and I have yet not enough experience to promise a secure authentication if I do it on my own.</p>
@@ -120,7 +120,7 @@ After running my code multiple times I was able to see the documentation on a gi
 <!-- -->And also I wanted to have an own hosted postgres-solution (managed database), for learning purposes. So it was also a nice solution, but it did not handled all my whishes.</p>
 <p>The next product I checked was <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a>. It seems to have a cheap option and is easy to implement with my current techstack. It looks like that there is also a plugin available to use it on wordpress.</p>
 <p>This makes Firebase probably the best solution overall. But we need to remember that I did not make any implementation but only used internet resources.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="database">Database<a href="https://developer.wortfokus.org/blog/planning-goes-on#database" class="hash-link" aria-label="Direct link to Database" title="Direct link to Database" translate="no">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="database">Database<a href="https://developer.wortfokus.org/documentation/blog/planning-goes-on#database" class="hash-link" aria-label="Direct link to Database" title="Direct link to Database" translate="no">​</a></h3>
 <p>The next problem was which database should I use. I have worked with several kind of databases. From SQL-Databases like <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">PostgreSQL</a>, to <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a> and a Graph-Databases <a href="https://neo4j.com/" target="_blank" rel="noopener noreferrer">Neo4J</a>.
 All of them have their arguments to be used. For example is Neo4J an easy solution to make relations. Document-based MongoDB with his NoSQL features (I know Neo4J also is a NoSQL-Database). And then PostgreSQL with its tables and relations.</p>
 <p>I personally prefer Neo4J as Database (since I like the way it handles relations). But for my case I had to think about the information I wanted to store and how to set up my database. So I had to put my preferences a bit back...<br>
@@ -139,8 +139,8 @@ All of them have their arguments to be used. For example is Neo4J an easy soluti
 <p>For the story-feature, the graphical database looks nice.
 But what about the questions? How do I store them? And the answers?</p>
 <p>And as a result, relational databases seemed to be the best solution. (I have to admit, I had to use ChatGPT to convince me, since I would have thought differently).<br>
-<!-- -->So I ended up with PostgreSQL. (For further insights about our decision check also <a href="https://developer.wortfokus.org/docs/projects/project-quiz/architecture/Decisions/adr-001-database-decision">this page</a>)</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="further-elements">Further Elements<a href="https://developer.wortfokus.org/blog/planning-goes-on#further-elements" class="hash-link" aria-label="Direct link to Further Elements" title="Direct link to Further Elements" translate="no">​</a></h3>
+<!-- -->So I ended up with PostgreSQL. (For further insights about our decision check also <a href="https://developer.wortfokus.org/documentation/docs/projects/project-quiz/architecture/Decisions/adr-001-database-decision">this page</a>)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="further-elements">Further Elements<a href="https://developer.wortfokus.org/documentation/blog/planning-goes-on#further-elements" class="hash-link" aria-label="Direct link to Further Elements" title="Direct link to Further Elements" translate="no">​</a></h3>
 <p>We already made some further planning and we made some decisions. Although it might get more important when we have a first production-ready solution.</p>
 <p>We for example checked how we could host our fullstack-application and make it available. There it looks like we use a combination of already using solutions and add new ones.<br>
 <!-- -->This means in our case that Wordpress is still used with Ionos, but our other products are hosted in an other way. But we have yet not decided which provider we will use. It was more about the idea if we host everything (Wordpress and Coded Products) on the same host-provider. But it looks like Ionos is the best when using Wordpress and others are better applying DotNet.<br>
@@ -154,19 +154,19 @@ But what about the questions? How do I store them? And the answers?</p>
         </item>
         <item>
             <title><![CDATA[Start planning]]></title>
-            <link>https://developer.wortfokus.org/blog/first-blog-post</link>
-            <guid>https://developer.wortfokus.org/blog/first-blog-post</guid>
+            <link>https://developer.wortfokus.org/documentation/blog/first-blog-post</link>
+            <guid>https://developer.wortfokus.org/documentation/blog/first-blog-post</guid>
             <pubDate>Sun, 17 Aug 2025 19:59:28 GMT</pubDate>
             <description><![CDATA[Today I'm embarking on a new development journey - creating a quiz application from scratch. This project will help me strengthen my programming skills while building something useful and interactive.]]></description>
             <content:encoded><![CDATA[<p>Today I'm embarking on a new development journey - creating a quiz application from scratch. This project will help me strengthen my programming skills while building something useful and interactive.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-goals">Project Goals<a href="https://developer.wortfokus.org/blog/first-blog-post#project-goals" class="hash-link" aria-label="Direct link to Project Goals" title="Direct link to Project Goals" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-goals">Project Goals<a href="https://developer.wortfokus.org/documentation/blog/first-blog-post#project-goals" class="hash-link" aria-label="Direct link to Project Goals" title="Direct link to Project Goals" translate="no">​</a></h2>
 <ul>
 <li>Create a quiz application for christians.</li>
 <li>Bring the bible nearer to the bible by letting them solving quizzes.</li>
 <li>Find out new things about the bible by enabling new knowledge about the word.</li>
 <li>Let friends test their knowledge agains each others.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="initial-planning-phase">Initial Planning Phase<a href="https://developer.wortfokus.org/blog/first-blog-post#initial-planning-phase" class="hash-link" aria-label="Direct link to Initial Planning Phase" title="Direct link to Initial Planning Phase" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="initial-planning-phase">Initial Planning Phase<a href="https://developer.wortfokus.org/documentation/blog/first-blog-post#initial-planning-phase" class="hash-link" aria-label="Direct link to Initial Planning Phase" title="Direct link to Initial Planning Phase" translate="no">​</a></h2>
 <p>For the first phase, I'll focus on:</p>
 <ol>
 <li>Defining the core features.</li>
